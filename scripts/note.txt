@@ -1,0 +1,8 @@
+# elérhető mentések felsorolása
+ls -1 ~/dhcp-dns-labor/backups/network
+
+# visszaállítás egy adott időbélyeggel
+sudo bash ~/dhcp-dns-labor/scripts/restore_network.sh 2025-10-25_10-30-00
+
+# vagy a gzipelt archívból
+sudo bash ~/dhcp-dns-labor/scripts/restore_network.sh network_backup_2025-10-25_10-30-00.tar.gz
