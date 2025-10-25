@@ -1,0 +1,20 @@
+cat << 'EOF' > ~/dhcp-dns-labor/.gitignore
+# Python / Node / System cache
+__pycache__/
+*.pyc
+node_modules/
+.env
+.DS_Store
+
+# Backups and logs
+backups/
+*.log
+
+# System files
+*.pid
+*.sock
+
+# SSH keys (biztonság!)
+*.key
+*.pem
+EOF
