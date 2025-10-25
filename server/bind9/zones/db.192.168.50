@@ -1,0 +1,9 @@
+$TTL 604800
+@   IN SOA ns1.local.lab. admin.local.lab. (
+    2025102501 ; serial
+    604800
+    86400
+    2419200
+    604800 )
+@    IN NS ns1.local.lab.
+1    IN PTR ns1.local.lab.

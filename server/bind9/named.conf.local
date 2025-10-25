@@ -1,0 +1,16 @@
+key "ddns-key" {
+  algorithm hmac-sha256;
+  secret "CHANGEME_BASE64_SECRET";
+};
+
+zone "local.lab" {
+  type master;
+  file "/etc/bind/zones/db.local.lab";
+  allow-update { key ddns-key; };
+};
+
+zone "50.168.192.in-addr.arpa" {
+  type master;
+  file "/etc/bind/zones/db.192.168.50";
+  allow-update { key ddns-key; };
+};
